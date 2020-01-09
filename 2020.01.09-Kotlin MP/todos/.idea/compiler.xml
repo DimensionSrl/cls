@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="Multiplatform.todos.api.jvmMain" target="1.6" />
+      <module name="Multiplatform.todos.api.jvmTest" target="1.6" />
+      <module name="Multiplatform.todos.data.jvmMain" target="1.6" />
+      <module name="Multiplatform.todos.data.jvmTest" target="1.6" />
+      <module name="Multiplatform.todos.server.main" target="1.8" />
+      <module name="Multiplatform.todos.server.test" target="1.8" />
+      <module name="todo.api.jvmMain" target="1.6" />
+      <module name="todo.api.jvmTest" target="1.6" />
+      <module name="todo.data.jvmMain" target="1.6" />
+      <module name="todo.data.jvmTest" target="1.6" />
+      <module name="todo.server.main" target="1.8" />
+      <module name="todo.server.test" target="1.8" />
+      <module name="todos.server.main" target="1.8" />
+      <module name="todos.server.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
