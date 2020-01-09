@@ -154,6 +154,10 @@ extension TodosViewController {
             cell.textLabel?.attributedText = nil
             cell.textLabel?.text = todo.title
         }
+        cell.detailTextLabel?.text = [
+            NSLocalizedString("Creato il", comment: ""),
+            dateFormatter.string(from: todo.createdAt)
+            ].joined(separator: ": ")
         
         return cell
     }

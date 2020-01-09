@@ -3,6 +3,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch
 import kotlin.coroutines.CoroutineContext
+import it.dimension.cls.todos.api.Result
 
 private fun <T> Result<T, Exception>.toCallbacks(success: (T) -> Unit, error: (Exception) -> Unit) {
     when (this) {

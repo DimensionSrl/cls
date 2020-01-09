@@ -1,6 +1,6 @@
 rootProject.name = "todos"
 
-include(":data", ":api", "server")
+include(":data", ":api", "server", ":android")
 
 enableFeaturePreview("GRADLE_METADATA")
 

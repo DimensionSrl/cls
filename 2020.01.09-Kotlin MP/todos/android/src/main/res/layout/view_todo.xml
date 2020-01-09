@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:weightSum="1"
+              android:paddingStart="16dp"
+              android:paddingEnd="16dp"
+              android:gravity="center_vertical"
+              android:layout_width="match_parent"
+              android:layout_height="56dp">
+    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+              android:ellipsize="end"
+              style="@style/TextAppearance.MaterialComponents.Body1"
+              tools:text="Title"
+              android:layout_weight="1" android:id="@+id/title"/>
+    <CheckBox android:id="@+id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="gone"/>
+</LinearLayout>

@@ -8,6 +8,7 @@ import io.ktor.http.ContentType
 import io.ktor.http.contentType
 import io.ktor.http.isSuccess
 import it.dimension.todo.data.ToDo
+import it.dimension.cls.todos.api.Result
 
 expect fun configuredClient(): HttpClient
 
@@ -24,7 +25,6 @@ class Client(
     }
 
     override suspend fun create(title: String?): Result<ToDo, Exception> {
-        //TODO: use location header to retrieve created object via GET?
         val todo = title?.let { ToDo(title = it) } ?: ToDo.EMPTY
         return try {
             client.post<ToDo>("$host/todos") {
@@ -39,7 +39,6 @@ class Client(
     }
 
     override suspend fun update(todo: ToDo): Result<ToDo, Exception> {
-        //TODO: use location header to retrieve created object via GET?
         return try {
             client.put<ToDo>("$host/todos/${todo.id}") {
                 body = todo

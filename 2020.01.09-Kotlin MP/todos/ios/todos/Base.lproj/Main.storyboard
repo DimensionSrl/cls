@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--todos-->
+        <!--Todos-->
         <scene sceneID="x3l-0L-uUj">
             <objects>
                 <tableViewController id="jzd-Ty-LPb" customClass="TodosViewController" customModule="todos" customModuleProvider="target" sceneMemberID="viewController">
@@ -38,7 +38,7 @@
                             <outlet property="delegate" destination="jzd-Ty-LPb" id="Frj-3U-Pol"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="todos" id="Ud5-X1-krK">
+                    <navigationItem key="navigationItem" title="Todos" id="Ud5-X1-krK">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="A2G-1J-ndC">
                             <connections>
                                 <action selector="showCreateTodoWithSender:" destination="jzd-Ty-LPb" id="WTu-YQ-DLl"/>

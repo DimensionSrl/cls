@@ -1,3 +1,5 @@
+package it.dimension.cls.todos.api
+
 /**
  * [Result] is either [Success] or [Error].
  */

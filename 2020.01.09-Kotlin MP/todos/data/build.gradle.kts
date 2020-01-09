@@ -9,6 +9,12 @@ plugins {
     id("kotlinx-serialization")
 }
 
+repositories {
+    google()
+    jcenter()
+    mavenCentral()
+}
+
 android {
     val androidCompileSdk: String by project
     val androidMinSdk: String by project

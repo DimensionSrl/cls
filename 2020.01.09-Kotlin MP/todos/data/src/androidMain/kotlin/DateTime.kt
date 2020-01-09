@@ -12,5 +12,5 @@ private object DateTimeFormatter {
 actual typealias DateTime = Date
 
 actual fun DateTime.toIso8601Timestamp(): String = DateTimeFormatter.formatter.format(this)
-actual fun dateTime(iso8601TimeStamp: String): DateTime = DateTimeFormatter.formatter.parse(iso8601TimeStamp)
+actual fun dateTime(iso8601TimeStamp: String): DateTime = DateTimeFormatter.formatter.parse(iso8601TimeStamp)!!
 actual fun dateTimeNow(): DateTime = Date()

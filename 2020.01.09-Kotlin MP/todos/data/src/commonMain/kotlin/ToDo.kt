@@ -5,7 +5,7 @@ import kotlin.random.Random
 
 @Serializable
 data class ToDo(
-    val id: Long = Random.nextLong(), //TODO: UUID? Default to 0 and let server generate it?
+    val id: Long = Random.nextLong(),
     val title: String,
     val done: Boolean = false,
     @Serializable(with = DateTimeSerializer::class)

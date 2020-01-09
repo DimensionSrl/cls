@@ -15,14 +15,14 @@ dependencies {
     val serializationVersion: String by project
     val ktorVersion: String by project
 
+    implementation(project(":data"))
+
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime:$serializationVersion")
     implementation("io.ktor:ktor-server-core:$ktorVersion")
     implementation("io.ktor:ktor-server-netty:$ktorVersion")
     implementation("io.ktor:ktor-serialization:$ktorVersion")
     implementation("org.slf4j:slf4j-simple:1.6.4")
-
-    implementation(project(":data"))
 
     testImplementation("io.ktor:ktor-server-tests:$ktorVersion")
 }

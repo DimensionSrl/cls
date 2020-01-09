@@ -48,7 +48,7 @@ fun main(args: Array<String>) {
                         // GET {id}
                         messages[id]
                     }) {
-                        null -> call.respond(HttpStatusCode.BadRequest)
+                        null -> call.respond(HttpStatusCode.NotFound)
                         else -> call.respond(found)
                     }
                 }

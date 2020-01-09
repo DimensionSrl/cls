@@ -1,6 +1,6 @@
 import it.dimension.todo.data.ToDo
+import it.dimension.cls.todos.api.Result
 
-//TODO: use some kind Response as return type
 interface Api {
 
     /**
@@ -23,7 +23,7 @@ interface Api {
     /**
      * Toggle the [ToDo.done] status of a [ToDo].
      */
-    suspend fun toggle(todo: ToDo): Result<ToDo, Exception> //TODO: too specific?
+    suspend fun toggle(todo: ToDo): Result<ToDo, Exception>
 
     /**
      * Retrieves all the [ToDo]s.
@@ -33,5 +33,5 @@ interface Api {
     /**
      * Retrieve a specific [ToDo].
      */
-    suspend fun get(id: Long): Result<ToDo?, Exception> //TODO: useless?
+    suspend fun get(id: Long): Result<ToDo?, Exception>
 }
